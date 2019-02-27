@@ -2,11 +2,13 @@
 为了优化大家的阅读体验，我重新进行了排版，并且增加了较为详细的目录供大家参考！如果有老哥对操作系统比较重要的知识总结过的话，欢迎找我哦！
 一些常用资源[公众号](#公众号)后台回复关键字“1”即可免费无套路获取。
 
+【限时福利，最后一天】极客时间[《Java 并发编程面试必备》](#Java并发编程专栏)专栏限时特惠，购买之后的小伙伴加 [我的微信](#我的微信) 报上自己的极客时间大名可以找我会把24元返现退给大家，减轻各位学习成本。
+
 <div align="center">  
 <img src="http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-11-16/49833984.jpg" width=""/>
 </br>
 
-[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-577511615-red.svg)](//shang.qq.com/wpa/qunwpa?idkey=f128b25264f43170c2721e0789b24b180fc482113b6f256928b6198ae07fe5d4)
+[![QQ群](https://img.shields.io/badge/QQ%E7%BE%A4-984466017-red.svg)](//shang.qq.com/wpa/qunwpa?idkey=10aee68bd241e739e59a8dfb0d4b33690bd3a4b5af0d09142cbdae2cb8c3966a)
 </br>
 微信交流群添加 [我的微信](#我的微信) 后回复关键字“加群”即可入群。
 
@@ -20,7 +22,7 @@
   - [Java/J2EE 基础](#javaj2ee-基础)
   - [Java 集合框架](#java-集合框架)
   - [Java 多线程](#java-多线程)
-  - [Java IO 与 NIO](#java-io-与-nio)
+  - [Java BIO,NIO,AIO](#java-bionioaio)
   - [Java 虚拟机 jvm](#java-虚拟机-jvm)
 - [:open_file_folder: 数据结构与算法](#open_file_folder-数据结构与算法)
   - [数据结构](#数据结构)
@@ -37,21 +39,20 @@
   - [MySQL](#mysql)
   - [Redis](#redis)
 - [:punch: 架构](#punch-架构)
-  - [分布式相关](#分布式相关)
 - [:musical_note: 面试必备](#musical_note-面试必备)
   - [备战春招/秋招系列](#备战春招秋招系列)
   - [最最最常见的Java面试题总结](#最最最常见的java面试题总结)
   - [Java学习/面试开源仓库推荐](#java学习面试开源仓库推荐)
 - [:art: 闲谈](#art-闲谈)
 - [:envelope: 说明](#envelope-说明)
-  - [项目介绍](#项目介绍)
-  - [关于转载](#关于转载)
-  - [如何对该开源文档进行贡献](#如何对该开源文档进行贡献)
-  - [为什么要做这个开源文档？](#为什么要做这个开源文档)
-  - [最后](#最后)
-  - [我的微信](#我的微信)
-  - [福利](#福利)
-  - [公众号](#公众号)
+
+## 待办
+
+- [ ] Java 8 新特性总结
+- [x] BIO,NIO,AIO 总结 
+- [ ] Netty 总结
+- [ ] 数据结构总结重构
+
   
 ## :coffee: Java
 
@@ -87,8 +88,9 @@
 * [《深入理解Java虚拟机》第2版学习笔记](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Java虚拟机（jvm）.md)
 
 
-### Java IO 与 NIO
+### Java BIO,NIO,AIO
 
+* [BIO,NIO,AIO 总结 ](https://github.com/Snailclimb/JavaGuide/blob/master/Java%E7%9B%B8%E5%85%B3/BIO%2CNIO%2CAIO%20summary.md)
 * [Java IO 与 NIO系列文章](https://github.com/Snailclimb/Java_Guide/blob/master/Java相关/Java%20IO与NIO.md)
 
 ### 设计模式
@@ -114,6 +116,7 @@
 
 * [计算机网络常见面试题](https://github.com/Snailclimb/Java_Guide/blob/master/计算机网络与数据通信/计算机网络.md)
 * [计算机网络基础知识总结](https://github.com/Snailclimb/Java_Guide/blob/master/计算机网络与数据通信/干货：计算机网络知识总结.md)
+* [HTTPS中的TLS](https://github.com/Snailclimb/Java_Guide/blob/master/计算机网络与数据通信/HTTPS中的TLS.md)
 
 ### 数据通信(RESTful,RPC,消息队列)总结
 
@@ -156,9 +159,9 @@
 
 ## :punch: 架构
 
-### 分布式相关
-
 * [一文读懂分布式应该学什么](https://github.com/Snailclimb/Java_Guide/blob/master/架构/分布式.md)
+* [8 张图读懂大型网站技术架构](https://github.com/Snailclimb/JavaGuide/blob/master/架构/8%20张图读懂大型网站技术架构.md)
+* [【面试精选】关于大型网站系统架构你不得不懂的10个问题](https://github.com/Snailclimb/JavaGuide/blob/master/架构/【面试精选】关于大型网站系统架构你不得不懂的10个问题.md)
 
 ## :musical_note: 面试必备
 
@@ -222,17 +225,13 @@
 
 ### 我的微信
 
-![我的微信](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-11-17/16009393.jpg)
+![我的微信](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-2/JavaGuide.jpg)
 
-### 福利
+### Java并发编程专栏
 
-> 阿里云技术有保障，在云服务技术上远远领先于国内其他云服务提供商。大家或者公司如果需要用到云服务器的话，推荐阿里云服务器，下面是阿里云目前正在做的一些活动，错过这波，后续可能多花很多钱：
+微信扫描下方二维码，购买之后我会将自己得到的24元返现都还给你，减轻各位的学习成本！
 
-1. [全民云计算：ECS云服务器2折起,1核1G仅需293元/年](https://promotion.aliyun.com/ntms/act/qwbk.html?userCode=hf47liqn)
-2. [高性能企业级性能云服务器限时2折起,2核4G仅需720元/年](https://promotion.aliyun.com/ntms/act/enterprise-discount.html?userCode=hf47liqn)
-3. [最高￥1888云产品通用代金券](https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=hf47liqn) 
-4. [阿里云建站服务](https://promotion.aliyun.com/ntms/act/jianzhanquan.html?userCode=hf47liqn)（企业官网、电商网站，多种可供选择模板，代金券免费领取）
-
+![ Java并发编程专栏](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-2/Java并发编程实战.jpg)
 
 ### 公众号
 
